@@ -923,61 +923,72 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="journey-section section-pad" id="journey">
-        <div className="journey-left reveal-up">
-          <p className="section-kicker">05 / THE JOURNEY</p>
-          <h2>
-            Progress over <em>pretence.</em>
-          </h2>
-          <p className="journey-lead">
-            The goal isn’t to look like I know everything. It’s to keep getting
-            better at the things that matter.
-          </p>
-          <a
-            href={links.leetcode}
-            target="_blank"
-            rel="noreferrer"
-            className="button button-outline"
-          >
-            My LeetCode profile <ArrowUpRight size={16} />
-          </a>
-        </div>
-        <div className="timeline">
-          <div className="timeline-item reveal-up">
-            <span className="timeline-no">01</span>
-            <div>
-              <span className="timeline-status">CURRENT CHAPTER</span>
-              <h3>B.Tech CSE</h3>
-              <p>SAGE University Bhopal · powered by Sunstone</p>
-              <small>
-                Computer Science & Engineering · Data Analytics specialization
-              </small>
-            </div>
-          </div>
-          <div className="timeline-item reveal-up">
-            <span className="timeline-no">02</span>
-            <div>
-              <span className="timeline-status">BUILDING FOUNDATIONS</span>
-              <h3>DSA with JavaScript & MERN Stack </h3>
-              <p>
-                Strengthening programming fundamentals and practicing
-                problem-solving.
-              </p>
-            </div>
-          </div>
-          <div className="timeline-item reveal-up">
-            <span className="timeline-no">03</span>
-            <div>
-              <span className="timeline-status">NEXT UP</span>
-              <h3>  Full-stack Web Development</h3>
-              <p>
-                Learning MongoDB, Express, React, and Node.js while building
-                toward stronger APIs, databases, and deployable projects.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      ```tsx
+<section className="journey-section section-pad" id="journey">
+  <div className="journey-left reveal-up">
+    <p className="section-kicker">05 / THE JOURNEY</p>
+
+    <h2>
+      Progress over <em>pretence.</em>
+    </h2>
+
+    <p className="journey-lead">
+      The goal isn’t to know everything. It’s to keep learning,
+      building, and improving every day.
+    </p>
+
+    <a
+      href={links.leetcode}
+      target="_blank"
+      rel="noreferrer"
+      className="button button-outline"
+    >
+      My LeetCode Profile <ArrowUpRight size={16} />
+    </a>
+  </div>
+
+  <div className="timeline">
+    <div className="timeline-item reveal-up">
+      <span className="timeline-no">01</span>
+
+      <div>
+        <span className="timeline-status">CURRENT CHAPTER</span>
+        <h3>B.Tech in Computer Science</h3>
+        <p>SAGE University Bhopal · Powered by Sunstone</p>
+        <small>
+          Computer Science & Engineering · Data Analytics Specialization
+        </small>
+      </div>
+    </div>
+
+    <div className="timeline-item reveal-up">
+      <span className="timeline-no">02</span>
+
+      <div>
+        <span className="timeline-status">BUILDING FOUNDATIONS</span>
+        <h3>DSA with JavaScript</h3>
+        <p>
+          Strengthening JavaScript fundamentals, learning data structures
+          and algorithms, and practicing problem-solving on LeetCode.
+        </p>
+      </div>
+    </div>
+
+    <div className="timeline-item reveal-up">
+      <span className="timeline-no">03</span>
+
+      <div>
+        <span className="timeline-status">DEVELOPMENT JOURNEY</span>
+        <h3>MERN Stack & Full-Stack Development</h3>
+        <p>
+          Building web applications with MongoDB, Express.js, React,
+          and Node.js while improving API development, database
+          management, and deployment skills.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="contact-section" id="contact">
         <div className="contact-inner reveal-up">
